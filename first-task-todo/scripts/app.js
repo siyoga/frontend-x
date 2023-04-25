@@ -23,6 +23,7 @@ function rerender() {
     element.classList.add(`todo`);
     element.innerHTML = `<div class="todo__day">Дело ${Number(index) + 1}</div>
                           <div class="todo__comment">${todos[index]}</div>
+                          <input type="checkbox"/>
                           <button class="todo__delete" onclick="deleteTodo(${index})">
                             <img src="./images/delete.svg" alt="Удалить дело ${
                               index + 1
